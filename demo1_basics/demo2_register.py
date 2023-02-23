@@ -18,3 +18,5 @@ d.find_element(By.ID, "password_step_input").send_keys("password")
 d.find_element(By.XPATH, "//input[@value='-1']").click()
 d.find_element(By.NAME, "websubmit").click()
 time.sleep(10)
+
+d.quit()
