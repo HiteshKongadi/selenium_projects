@@ -27,6 +27,7 @@ driver.find_element(By.ID, "ssopassword").send_keys("hitesh")
 driver.find_element(By.ID, "signin_button").click()
 actual_error = driver.find_element(By.XPATH, "//div[contains(text(),'Invalid')]").text
 
+# to find out which tab to navigate using session ID and title
 for window in driver.window_handles:  # getting multiple window session ID
     print(window)
     driver.switch_to.window(window)
